@@ -1,0 +1,220 @@
+::selection {
+    background: #fff;
+    text-shadow: none;
+}
+
+body{
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    background-color: #FaFaFa;
+    font-family: 'Roboto';
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/***** header *****/
+#header{
+    position: relative;
+}
+
+#headerlogo{
+    position: absolute;
+    width: 30%;
+    left: 30%;
+    height:auto;
+    top: 20%;
+}
+
+#headerfig{
+    height:55%;
+    width: 27%;
+    background: url("img/header1.png") no-repeat;
+    background-size:contain;
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+}
+
+#headerfig:hover{
+    background: url("img/header2.png") no-repeat;
+    background-size:contain;
+}
+
+#headerbg{
+    width: 100%;
+    height: auto;
+}
+
+
+/***** menu *****/
+#menu{
+    padding: 50px;
+    width: 100%;
+    background-color: #FaFaFa;
+    position: fixed;
+    transition: top 1s;
+}
+
+#menu-logo{
+    height: 200px;
+    margin-right: 300px;
+}
+
+.menusec{
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-right:10px;
+}
+
+#menu-prtf{
+    background-image: url(img/menu_portf.png);
+    background-size: contain;
+}
+
+#menu-prtf:hover{
+    background-image: url(img/menu_portf1.png);
+    background-size: contain;
+}
+
+#menu-prtf:active{
+    background-image: url(img/menu_portf2.png);
+    background-size: contain;
+}
+
+#menu-abtme{
+    background-image: url(img/menu_about.png);
+    background-size: contain;
+}
+
+#menu-abtme:hover{
+    background-image: url(img/menu_about1.png);
+    background-size: contain;
+}
+
+#menu-abtme:active{
+    background-image: url(img/menu_about2.png);
+    background-size: contain;
+}
+
+#menu-rand{
+    background-image: url(img/menu_rand.png);
+    background-size: contain;
+}
+
+#menu-rand:hover{
+    background-image: url(img/menu_rand1.png);
+    background-size: contain;
+}
+
+#menu-rand:active{
+    background-image: url(img/menu_rand2.png);
+    background-size: contain;
+}
+
+
+/***** portfolio *****/
+.prtfsec{
+    padding: 8%;
+}
+
+#blankies{
+    background-color: #DE4B4B;
+}
+
+#five{
+    background-color: #323232;
+    color: #fff;
+}
+
+#genethera{
+    background-color: #92a6e3;
+}
+
+
+/***** about me *****/
+#aboutme{
+    padding: 8%;
+}
+
+
+/***** random art *****/
+#randomart{
+    background-color: #92a6e3;
+}
+
+.randcata{
+    height: 200px;
+    width: auto;
+}
+
+
+
+
+/******************* project rooms ****************/
+.roombody{
+    text-align: left;
+    font-family: 'Domine', serif;
+    color: #353535;
+}
+
+#roomtrig{
+    background-image: url(img/roomwhite.jpg);
+}
+
+#roomttl{
+    width: 800px;
+    height: auto;
+    margin-top: 370px;
+    margin-left: -350px;
+    font-size: 110px;
+    transform: rotate(90deg);
+    position: fixed;
+}
+
+#roomttldes1,
+#roomttldes2,
+#roomwhitettl,
+#roomwhitev,
+#roomchrct{
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 200px;
+    padding: 5%;
+    padding-left: 0px;
+}
+
+#roomdesign,
+#roomwhite{
+    color: #FaFaFa;
+    background-color: #666666;
+}
+
+.roomotrimg{
+    height: 400px;
+}
+
+#roomtrig, #rddes{
+    padding-left: 200px;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 45%;
+    position: relative;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#rddes{
+    background-image: url(img/roomtime.png);
+}
+
+#roomwhitev{
+    margin-top: -18%;
+}
