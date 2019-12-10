@@ -10,3 +10,11 @@ window.onscroll = function() {
       }
       prevScrollpos = currentScrollPos;
     }
+
+
+//blk button next
+
+var buttnext = document.getElementById("buttnext");
+buttnext.onclick = function(){
+  document.getElementById("blkcnt");
+}
