@@ -14,7 +14,7 @@ window.onscroll = function() {
 
 //blk button next
 
-var buttnext = document.getElementById("buttnext");
-buttnext.onclick = function(){
-  document.getElementById("blkcnt");
-}
+// var buttnext = document.getElementById("buttnext");
+// buttnext.onclick = function(){
+//   document.getElementById("blkcnt");
+// }
