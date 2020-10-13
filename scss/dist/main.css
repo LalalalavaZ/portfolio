@@ -1,0 +1,171 @@
+h1 {
+  font-size: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+  color: #353535;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+mark {
+  background: none;
+  color: #ca7676;
+}
+
+img {
+  max-width: 100%;
+}
+
+#portfolio_header {
+  height: 29.5em;
+  width: auto;
+}
+
+#logo_wrap {
+  width: 12em;
+  height: 12em;
+  margin: 0 0 0 1em;
+  display: flex;
+  background-size: contain;
+  padding: 2em;
+}
+#logo_wrap .a {
+  fill: #353535;
+}
+
+#menu {
+  height: 12.5em;
+  padding: 0 1em 0 0;
+}
+@media screen and (max-width: 650px) {
+  #menu {
+    height: 9em;
+  }
+}
+#menu .menusec {
+  width: 12em;
+  height: 12em;
+  margin: 0 0 0 1em;
+  display: flex;
+  background-size: contain;
+  float: right;
+}
+@media screen and (max-width: 650px) {
+  #menu .menusec {
+    width: 8em;
+    height: 8em;
+  }
+}
+
+#menu-abtme {
+  background-image: url(../../img/menu_about.png);
+}
+#menu-abtme:hover {
+  background-image: url(../../img/menu_about1.png);
+}
+#menu-abtme:active {
+  background-image: url(../../img/menu_about2.png);
+}
+
+#menu-prtf {
+  background-image: url(../../img/menu_portf.png);
+}
+#menu-prtf:hover {
+  background-image: url(../../img/menu_portf1.png);
+}
+#menu-prtf:active {
+  background-image: url(../../img/menu_portf2.png);
+}
+
+#menu-rand {
+  background-image: url(../../img/menu_rand.png);
+}
+#menu-rand:hover {
+  background-image: url(../../img/menu_rand1.png);
+}
+#menu-rand:active {
+  background-image: url(../../img/menu_rand2.png);
+}
+
+.mainsec {
+  padding: 6.25em 15%;
+  background-color: #e3e3e3;
+}
+
+.prtfsec {
+  height: 15em;
+  margin-bottom: 1em;
+  border: solid #353535 2px;
+  background-size: cover;
+}
+
+#surspoken {
+  background-image: url(../../img/surspoken.jpg);
+}
+
+#udhils {
+  background-image: url(../../img/udhils_ttl.jpg);
+}
+
+#abtme {
+  border: 1px solid #353535;
+  height: 31em;
+}
+
+#abtmel {
+  float: left;
+  width: 26em;
+  height: auto;
+}
+
+#resume {
+  height: 22em;
+  padding: 1em;
+  overflow: auto;
+  border-radius: 3px;
+}
+#resume:hover {
+  box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+#abtmer {
+  width: 26em;
+  height: auto;
+  float: right;
+}
+
+@media screen and (max-width: 650px) {
+  #contactinfo {
+    position: static;
+  }
+}
+
+.randsec {
+  display: flex;
+  float: left;
+}
+
+.imgdes {
+  width: 28rem;
+  height: auto;
+}
+.imgdes p {
+  color: #ca7676;
+  display: flex;
+  text-align: center;
+}
+.imgdes:hover {
+  filter: saturate(30);
+}

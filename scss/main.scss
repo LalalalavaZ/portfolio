@@ -1,0 +1,234 @@
+// @import 'grid.scss';
+
+//media
+$grid-desktop-breakpoint: 1400px;
+$grid-tablet-breakpoint: 1020px;
+$grid-mobile-breakpoint: 650px;
+
+
+// preset colors
+$maindark: #353535;
+$mainbright: #FaFaFa;
+$maingrey: #e3e3e3;
+$secondcolor: #ca7676;
+
+//preset text
+@mixin font-default {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden; 
+    color: $maindark;
+}
+
+h1{
+    font-size: 30px;
+}
+ 
+// general reset 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    @include font-default();
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+mark{
+    background: none;
+    color: $secondcolor;;
+}
+
+img{ 
+    max-width: 100%;
+}
+
+
+
+//portfolio page specific
+
+#portfolio_header{
+    height: 29.5em;
+    width: auto;
+}
+
+@mixin menuBlock {
+    width: 12em;
+    height: 12em;
+    margin: 0 0 0 1em;
+    display: flex;
+    background-size: contain;
+}
+
+#logo_wrap{
+    @include menuBlock;
+    .a{fill:$maindark;}
+    padding: 2em;
+}
+
+#menu{
+    height: 12.5em;
+    // border: 1px solid $maindark;
+    padding: 0 1em 0 0;
+
+    @media screen and (max-width: $grid-mobile-breakpoint){
+        height: 9em;
+    }  
+    .menusec{
+        @include menuBlock;
+        float: right;
+
+        @media screen and (max-width: $grid-mobile-breakpoint){
+            width: 8em;
+            height: 8em;
+        }        
+    }
+}
+
+#menu-abtme{
+    background-image: url(../../img/menu_about.png);
+
+    &:hover{
+        background-image: url(../../img/menu_about1.png);
+    }
+
+    &:active{
+        background-image: url(../../img/menu_about2.png);
+    }
+}
+
+#menu-prtf{
+    background-image: url(../../img/menu_portf.png);
+
+    &:hover{
+        background-image: url(../../img/menu_portf1.png);
+    }
+
+    &:active{
+        background-image: url(../../img/menu_portf2.png);
+    }
+}
+
+#menu-rand{
+    background-image: url(../../img/menu_rand.png);
+
+    &:hover{
+        background-image: url(../../img/menu_rand1.png);
+    }
+
+    &:active{
+        background-image: url(../../img/menu_rand2.png);
+    }
+}
+
+
+
+
+
+
+
+//main
+.mainsec{
+    padding: 6.25em 15%;
+    background-color: $maingrey;
+}
+
+
+
+
+// portfolio in portfolio
+.prtfsec{
+    height: 15em;
+    margin-bottom: 1em;
+    border: solid $maindark 2px;
+    background-size: cover;
+}
+
+#surspoken{
+    background-image: url(../../img/surspoken.jpg);
+    
+}
+
+#udhils{
+    background-image: url(../../img/udhils_ttl.jpg);
+}
+
+
+
+//about me
+#abtme{
+    border: 1px solid #353535;
+    height: 31em;
+}
+
+#abtmel{
+    float: left;
+    width: 26em;
+    height: auto;
+}
+
+#resume{
+    height: 22em;
+    padding: 1em;
+    overflow: auto;
+    border-radius: 3px;
+
+    &:hover{
+        // -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+        // -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+        box-shadow: inset 5px 5px 20px rgba(0,0,0,0.1),
+                    5px 5px 10px rgba(255,255,255,0.3);
+        transition: box-shadow 0.2s ease-in-out;
+    }
+}
+
+#abtmer{ 
+    // border: 1px solid #353535;
+    width: 26em;
+    height: auto;
+    float: right;
+}
+
+#contactinfo{
+    @media screen and (max-width: $grid-mobile-breakpoint){
+        position: static; //how to overlap 
+    }
+}
+
+
+
+
+//random art
+// .grid{
+//   box-sizing: border-box;
+//   display: flex;
+//   margin-left: auto;
+//   margin-right: auto;
+//   flex-wrap: wrap;
+//   grid-template-columns: 2;
+//   width: 100%;
+// }
+
+.randsec{
+    display: flex;
+    float: left;
+    // padding: 1rem;
+}
+
+.imgdes{
+    width: 28rem;
+    height: auto;
+    p{
+        color: $secondcolor;
+        display: flex;
+        text-align: center;
+    }
+    &:hover{
+        filter: saturate(30);
+        
+    }
+}

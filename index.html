@@ -2,102 +2,107 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Lava Zhang</title>
+    <title>Lava Zhang's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="icon" href="img/logo.png">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="scss/dist/main.css">
 </head>
 
 <body>
+    <header id="portfolio_header">
+        <div id="logo_wrap">
+            <svg width="100%" height="100%" viewBox="0 0 850 850"><polygon class="a" points="85 581 85 0 0 0 0 581 0 581 0 666 850 666 850 581 85 581"/><polygon class="a" points="182 329 206 323 184 323 43 850 131 850 226 493 182 329"/><polygon class="a" points="206 323 182 329 226 493 322 850 410 850 269 323 206 323"/><polygon class="a" points="622 329 646 323 624 323 483 850 571 850 666 493 622 329"/><polygon class="a" points="646 323 622 329 666 493 762 850 850 850 709 323 646 323"/><polygon class="a" points="497 521 474 527 496 527 637 0 549 0 453 357 497 521"/><polygon class="a" points="474 527 497 521 453 357 357 0 269 0 411 527 474 527"/></svg>
+        </div>
+    </header>
+
     <div id="menu">
-        <img id="menu-logo" src="img/menu_logo.png"/>
-        <a class="menusec" href="#header" id="menu-abtme"></a>
-        <a class="menusec" href="#portfolio" id="menu-prtf"></a>
+        <a class="menusec" href="#abtme" id="menu-abtme" onclick="toggleMain"></a>
         <a class="menusec" href="#randart" id="menu-rand"></a>
+        <a class="menusec" href="#portfolio" id="menu-prtf"></a>
     </div>
 
-    <div id="header">
-        <div id="headerdesfull" class="headerdes"><p id="zynen">Zhang Yuanning</p><p id="zyncn">张远宁<span id="becomes"> becomes</span></p><img id="headerlogo" src="img/logo.png"/><p id="lavades">when she works creatively.</p></div>
-        <div id="headerfig"></div>
-        <img id="headerbg" src="img/headerbg.JPG"/>
-        
-    </div>
-
-    <div id="portfolio">
-        <div class="prtfsec" id="blankies">
-            <a href="blankies.html"><img style="width: 50%" src="img/prtf_blkttl.png"/></a>
-            <a href="blankies.html"><img src="img/blk_chew.gif"/></a>
-            <div id="prtfblankiesdes">
-                With Consumerism being the world’s only ideology and religon, welcome to the world where the blankies live, work, love, and consume here.<br>
-                Illustrated booklet, interactive projection, and animated gifs.
+    <main>
+        <div class="mainsec" id="portfolio">
+            <div class="prtfsec" id= "surspoken">
+                <a href="surspoken.html"><h1>Surspoken</h1></a>
+                <p>A 4D Visual Novel</p>
+            </div>
+            <div class="prtfsec" id= "plshld">
+                <a href="plshld.html"><h1>Please Hold</h1></a>
+                <p>Art direction for the short film.</p>
+            </div>
+            <div class="prtfsec" id= "udhils">
+                <a href="undrehills.html"><h1>The Underhills</h1></a>
+                <p>A series of characters</p>
             </div>
         </div>
-        <div class="prtfsec" id="five">
-            <a href="fivedoc.html"><img style="width: 50%" src="img/portffive.jpg"/></a>
-            <div id="prtffivedes">
-                Web canvas to learn individual’s choice of collaboration under anonymous circumstance.<br>
-                A smallest pixel art can be made in a 5x5 grid, but will you help and make a larger work of art possible?
+    
+        <div class="mainsec grid" id="randart">
+            <div id="randrow1">
+                
+                <div class="imgdes"><img class="randsec" src="img/randart/2017incloud.jpg"/><p>Cloud and More</p></div>
+                
+                <div class="imgdes"><img class="randsec" src="img/randart/2016kitereel.jpg"/>Study On Freedom</div>
+                
+                <div class="imgdes"><img class="randsec" src="img/randart/2017lolita3.jpg"/>Dreams On Shelf Series</div>
+            </div>
+            <div id="randrow2">
+                <img class="randsec" src="img/randart/2018cold.gif"/>
+                <div>Motion Graphics</div>
+                <img class="randsec" src="img/randart/2019wind.jpg"/>
+                <div>Illustration Gallery</div>
+                <img class="randsec" src="img/randart/2018cthulhu.jpg"/>
+                <div>Character Design</div>
+                <img class="randsec" src="img/randart/2018joseph.jpg"/>
+                <div>CG Gallery</div>
+            </div>   
+        </div>
+
+        <div class="mainsec" id="abtme">
+            <div id="abtmel">
+                <div style="font-size: 3.5em; margin-bottom: 0.5em;">Lava Zhang</div>
+                <div id="resume">
+                    <strong>SKILLS</strong><br><br>
+                    <mark>Web</mark> design<br>
+                    [Sass, Node.js, P5.js]<br>
+                    <mark>3D</mark> modelling and animation<br>
+                    [Autodesk, Motion Capture]<br>
+                    <mark>2D</mark> design, film, and animation<br>
+                    [AE, PR, PS, Illustrator, InDesign]<br>
+                    <mark>Game/Expertience</mark> design<br>
+                    [Unity, Max.msp, projection mapping]<br>
+                    <mark>Creative coding</mark> with<br>
+                    Processing[Java] and Python<br>
+                    <mark>Multilingual</mark> with English and Chinese, familiar with Spanish and Japanese.<br><br><hr><br>
+                    <strong>EDUCATION</strong><br><br>
+                    BFA @ <mark>Design and Technology</mark><br>
+                    Parsons, The New School<br>
+                    IB @ Cairo American College<br><br><hr><br>
+                    <strong>EXPERIENCE</strong><br><br>
+                    Media Intern<br>
+                    <mark>December 2017 – January 2018</mark><br>
+                    @ Xinhua News Agency Middle East Branch, Cairo, Egypt<br>
+                    Editting news footage and recording voice over for the Youtube channel.<br>
+                    <br>
+                    Media Intern<br>
+                    <mark>June – Augest 2018</mark><br>
+                    @ SIPC, Beijing, China<br>
+                    Help making SIPC weekly news, presentation slides, Wechat content, and other office works.<br>
+                </div>
+            </div>
+            <div id="abtmer">
+                <img id="abtmephoto" src="img/abtme.png">
+                <!-- style="width: 100%; filter: drop-shadow(0.75em 0.5em 0.75em #777);" -->
+                <div id="contactinfo">
+                    zyzyning@outlook.com<br>
+                    +1 9176671548<br>
+                    +86 17801196326
+                </div>
             </div>
         </div>
-        <div class="prtfsec" id="rooms">
-            <a href="rooms.html"><img style="width: 70%" src="img/roomwalk.gif"/></a>
-            <a href="rooms.html"><img style="width: 50%" src="img/roomttl.png"/></a>
-            <div id="prtfroomdes">
-                Human soul do not fade away or go to Heaven/Hell right after death in Chinese folk religion. It lingers our space for 7 more days. <br>
-                What do you do with that time? <br>
-                Non-lingear story told in computer game. </div>
-        </div>
-        <div class="prtfsec" id="genethera">
-            <a href="genethera.html"><img style="width: 50%" src="img/gtpo1.jpg"/></a><br>
-            <a href="genethera.html"><img style="width: 50%" src="img/gttrdttl.png"/></a>
-            <div id="prtfroomsdes">
-                An imagined society where children goes through adolescence faster, completed with Research on the emerging technology of gene therapy. 
-            </div>
-        </div>
-    </div>
+    </main>
+    
 
-    <!-- <div id="aboutme">
-        <div id="abtbasic">
-            Yuanning Zhang 张远宁 becomes Lava when she works creatively. </br>
-            She is currently studying in the Design and Technology program in Parsons, New York, where she learnt about how the people network functions.<br>
-            But Lava is still curious about everything. Yes, EVERYTHING.<br>
-            This irresistible impulse to know the relationship between everything is one of the biggest hypothesis in all her works.<br>
-            This curiousity results in a bit perfectionism in Lava's work and life (to an extent it might be called OCD). When making a chatbot, she forced herself to learn Python, Machine Learning algorithms, Java, tracing back to Turing test. When designing a character, she binge read social and developmental psychology, referenced tens of characters from literature and real life, and portraited with different of aesthetic styles.<br>
-            To catagorize Lava's work is hard, but maybe we can say there are:
-        </div>
-    </div> -->
-
-    <div id="randart">
-        <!-- <div class="2ds">
-            <img class="randcata" src="img/rand_2d.png"/>
-        </div>
-        <div class="3ds">
-            <img class="randcata" src="img/rand_3d.png"/>
-        </div>
-        <div class="4ds">
-            <img class="randcata" src="img/rand_4d.png"/>
-        </div> -->
-        <div id="randrow1">
-            <img class="randsec" src="img/randart/2017moonsat.jpg"/>
-            <img class="randsec" src="img/randart/2016kitereel.jpg"/>
-            <img class="randsec" src="img/randart/2017lolita1.jpg"/>
-            <img class="randsec" src="img/randart/2017lolita2.jpg"/>
-            <img class="randsec" src="img/randart/2016faceless.jpg"/>
-            <img class="randsec" src="img/randart/2017incloud.jpg"/>
-        </div>
-        <div id="randrow2">
-            <img class="randsec" src="img/randart/2017shoestudy.jpg"/>
-            <img class="randsec" src="img/randart/2017time.jpg"/>
-            <img class="randsec" src="img/randart/2018cold.gif"/>
-            <img class="randsec" src="img/randart/2018cthulhu.jpg"/>
-            <img class="randsec" src="img/randart/2018joseph.jpg"/>
-            <img class="randsec" src="img/randart/2019wind.jpg"/>
-        </div>
-            
-    </div>
-
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
