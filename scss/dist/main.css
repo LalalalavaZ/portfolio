@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 mark {
@@ -27,15 +28,21 @@ img {
   max-width: 100%;
 }
 
+main {
+  padding: 6.25em 15%;
+  background-color: #e3e3e3;
+}
+
 #portfolio_header {
   height: 29.5em;
   width: auto;
+  background-color: #FaFaFa;
 }
 
 #logo_wrap {
-  width: 12em;
-  height: 12em;
-  margin: 0 0 0 1em;
+  width: 11em;
+  height: 11em;
+  margin: 1em 1em 1em 0;
   display: flex;
   background-size: contain;
   padding: 2em;
@@ -46,7 +53,12 @@ img {
 
 #menu {
   height: 12.5em;
+  width: 100%;
+  bottom: 0;
+  background-color: #FaFaFa;
   padding: 0 1em 0 0;
+  position: fixed;
+  box-shadow: 0px 20px 20px 30px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 650px) {
   #menu {
@@ -54,17 +66,19 @@ img {
   }
 }
 #menu .menusec {
-  width: 12em;
-  height: 12em;
-  margin: 0 0 0 1em;
+  width: 11em;
+  height: 11em;
+  margin: 1em 1em 1em 0;
   display: flex;
   background-size: contain;
   float: right;
+  transition: 0.1s;
 }
 @media screen and (max-width: 650px) {
   #menu .menusec {
-    width: 8em;
-    height: 8em;
+    width: 7em;
+    height: 7em;
+    align-items: center;
   }
 }
 
@@ -98,24 +112,26 @@ img {
   background-image: url(../../img/menu_rand2.png);
 }
 
-.mainsec {
-  padding: 6.25em 15%;
-  background-color: #e3e3e3;
-}
-
 .prtfsec {
   height: 15em;
   margin-bottom: 1em;
   border: solid #353535 2px;
   background-size: cover;
+  padding: 2vw;
 }
 
 #surspoken {
   background-image: url(../../img/surspoken.jpg);
+  color: #ca7676;
+}
+
+#plshld {
+  background-image: url(../../img/plshld_ttl.png);
 }
 
 #udhils {
   background-image: url(../../img/udhils_ttl.jpg);
+  color: #e3e3e3;
 }
 
 #abtme {
@@ -153,19 +169,5 @@ img {
 }
 
 .randsec {
-  display: flex;
-  float: left;
-}
-
-.imgdes {
-  width: 28rem;
-  height: auto;
-}
-.imgdes p {
-  color: #ca7676;
-  display: flex;
-  text-align: center;
-}
-.imgdes:hover {
-  filter: saturate(30);
+  height: 500px;
 }

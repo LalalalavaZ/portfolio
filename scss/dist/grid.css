@@ -1,0 +1,148 @@
+.grid {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
+}
+@media screen and (max-width: 1020px) {
+  .grid {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .grid {
+    width: 100%;
+  }
+}
+.grid-0 {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.col-desk-0 {
+  box-sizing: border-box;
+  width: 0%;
+}
+.col-desk-shift-0 {
+  margin-left: 0%;
+}
+.col-desk-1 {
+  box-sizing: border-box;
+  width: 12.5%;
+}
+.col-desk-shift-1 {
+  margin-left: 12.5%;
+}
+.col-desk-2 {
+  box-sizing: border-box;
+  width: 25%;
+}
+.col-desk-shift-2 {
+  margin-left: 25%;
+}
+.col-desk-3 {
+  box-sizing: border-box;
+  width: 37.5%;
+}
+.col-desk-shift-3 {
+  margin-left: 37.5%;
+}
+.col-desk-4 {
+  box-sizing: border-box;
+  width: 50%;
+}
+.col-desk-shift-4 {
+  margin-left: 50%;
+}
+.col-desk-5 {
+  box-sizing: border-box;
+  width: 62.5%;
+}
+.col-desk-shift-5 {
+  margin-left: 62.5%;
+}
+.col-desk-6 {
+  box-sizing: border-box;
+  width: 75%;
+}
+.col-desk-shift-6 {
+  margin-left: 75%;
+}
+.col-desk-7 {
+  box-sizing: border-box;
+  width: 87.5%;
+}
+.col-desk-shift-7 {
+  margin-left: 87.5%;
+}
+.col-desk-8 {
+  box-sizing: border-box;
+  width: 100%;
+}
+.col-desk-shift-8 {
+  margin-left: 100%;
+}
+@media screen and (max-width: 1020px) {
+  .col-tab-0 {
+    box-sizing: border-box;
+    width: 0%;
+  }
+  .col-tab-shift-0 {
+    margin-left: 0%;
+  }
+  .col-tab-1 {
+    box-sizing: border-box;
+    width: 25%;
+  }
+  .col-tab-shift-1 {
+    margin-left: 25%;
+  }
+  .col-tab-2 {
+    box-sizing: border-box;
+    width: 50%;
+  }
+  .col-tab-shift-2 {
+    margin-left: 50%;
+  }
+  .col-tab-3 {
+    box-sizing: border-box;
+    width: 75%;
+  }
+  .col-tab-shift-3 {
+    margin-left: 75%;
+  }
+  .col-tab-4 {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .col-tab-shift-4 {
+    margin-left: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .col-mob-0 {
+    box-sizing: border-box;
+    width: 0%;
+  }
+  .col-mob-shift-0 {
+    margin-left: 0%;
+  }
+  .col-mob-1 {
+    box-sizing: border-box;
+    width: 50%;
+  }
+  .col-mob-shift-1 {
+    margin-left: 50%;
+  }
+  .col-mob-2 {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .col-mob-shift-2 {
+    margin-left: 100%;
+  }
+}

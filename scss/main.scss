@@ -1,9 +1,10 @@
-// @import 'grid.scss';
-
 //media
 $grid-desktop-breakpoint: 1400px;
 $grid-tablet-breakpoint: 1020px;
 $grid-mobile-breakpoint: 650px;
+$desktop-gutter: 40px;
+$tablet-gutter: 30px;
+$mobile-gutter: 20px;
 
 
 // preset colors
@@ -36,6 +37,7 @@ body{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 mark{
@@ -47,6 +49,12 @@ img{
     max-width: 100%;
 }
 
+main{
+    padding: 6.25em 15%;
+    background-color: $maingrey;
+}
+
+
 
 
 //portfolio page specific
@@ -54,12 +62,13 @@ img{
 #portfolio_header{
     height: 29.5em;
     width: auto;
+    background-color: $mainbright;
 }
 
 @mixin menuBlock {
-    width: 12em;
-    height: 12em;
-    margin: 0 0 0 1em;
+    width: 11em;
+    height: 11em;
+    margin: 1em 1em 1em 0;
     display: flex;
     background-size: contain;
 }
@@ -72,8 +81,12 @@ img{
 
 #menu{
     height: 12.5em;
-    // border: 1px solid $maindark;
+    width: 100%;
+    bottom: 0;
+    background-color: $mainbright;
     padding: 0 1em 0 0;
+    position: fixed;
+    box-shadow: 0px 20px 20px 30px rgba(0,0,0,0.1);
 
     @media screen and (max-width: $grid-mobile-breakpoint){
         height: 9em;
@@ -81,10 +94,12 @@ img{
     .menusec{
         @include menuBlock;
         float: right;
+        transition: 0.1s;
 
         @media screen and (max-width: $grid-mobile-breakpoint){
-            width: 8em;
-            height: 8em;
+            width: 7em;
+            height: 7em;
+            align-items: center;
         }        
     }
 }
@@ -131,30 +146,28 @@ img{
 
 
 
-//main
-.mainsec{
-    padding: 6.25em 15%;
-    background-color: $maingrey;
-}
-
-
-
-
 // portfolio in portfolio
 .prtfsec{
     height: 15em;
     margin-bottom: 1em;
     border: solid $maindark 2px;
     background-size: cover;
+    padding: 2vw;
 }
 
 #surspoken{
     background-image: url(../../img/surspoken.jpg);
-    
+    color: $secondcolor;
+    //speech bubble cursor follow
+}
+
+#plshld{
+    background-image: url(../../img/plshld_ttl.png);
 }
 
 #udhils{
     background-image: url(../../img/udhils_ttl.jpg);
+    color: $maingrey;
 }
 
 
@@ -203,32 +216,7 @@ img{
 
 
 //random art
-// .grid{
-//   box-sizing: border-box;
-//   display: flex;
-//   margin-left: auto;
-//   margin-right: auto;
-//   flex-wrap: wrap;
-//   grid-template-columns: 2;
-//   width: 100%;
-// }
-
 .randsec{
-    display: flex;
-    float: left;
-    // padding: 1rem;
+    height: 500px;
 }
 
-.imgdes{
-    width: 28rem;
-    height: auto;
-    p{
-        color: $secondcolor;
-        display: flex;
-        text-align: center;
-    }
-    &:hover{
-        filter: saturate(30);
-        
-    }
-}
