@@ -18,6 +18,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  color: #ca7676;
+  text-shadow: 1px 1px 1px #FaFaFa;
+}
 
 mark {
   background: none;
@@ -31,6 +35,20 @@ img {
 main {
   padding: 6.25em 15%;
   background-color: #e3e3e3;
+}
+
+.mainsec {
+  margin-bottom: 6.25em;
+}
+
+.backtomain {
+  background-image: url(../../img/logo.png);
+  background-size: cover;
+  height: 6.25em;
+  width: 6.25em;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 
 #portfolio_header {
@@ -170,4 +188,11 @@ main {
 
 .randsec {
   height: 500px;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: "it1 it1 it2 it3" "it4 it4 it4 it5";
 }

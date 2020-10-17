@@ -38,6 +38,10 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+    &:hover{
+        color: $secondcolor;
+        text-shadow: 1px 1px 1px $mainbright;
+    }
 }
 
 mark{
@@ -53,6 +57,22 @@ main{
     padding: 6.25em 15%;
     background-color: $maingrey;
 }
+
+.mainsec{
+    margin-bottom: 6.25em;
+}
+
+.backtomain{
+    background-image: url(../../img/logo.png);
+    background-size: cover;
+    height: 6.25em;
+    width: 6.25em;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+
 
 
 
@@ -220,3 +240,9 @@ main{
     height: 500px;
 }
 
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "it1 it1 it2 it3" "it4 it4 it4 it5";
+}
