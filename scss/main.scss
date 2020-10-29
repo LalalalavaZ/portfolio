@@ -72,6 +72,11 @@ main{
     right: 30px;
 }
 
+.hidden{
+    display: none;
+
+}
+
 
 
 
@@ -160,9 +165,6 @@ main{
     }
 }
 
-.hidden{
-    display: none;
-}
 
 
 
@@ -197,7 +199,6 @@ main{
 
 //about me
 #abtme{
-    border: 1px solid #353535;
     height: 31em;
 }
 
@@ -223,7 +224,6 @@ main{
 }
 
 #abtmer{ 
-    // border: 1px solid #353535;
     width: 26em;
     height: auto;
     float: right;
@@ -239,15 +239,18 @@ main{
 
 
 //random art
-.randsec{
-    height: 500px;
-}
+// .randsec{
+//     height: 200px;
+// }
 
 .grid_container{
     display: grid;
-    grid-column-gap: 1em;
+    grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
-
+    grid-auto-rows: 200px;
+    // @media screen and (max-width: $grid-mobile-breakpoint){
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
 }
 
 .randimg{
@@ -255,4 +258,25 @@ main{
     height: 100%;
     object-fit: cover;
     display: block; 
+}
+
+.randwave1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1; 
+    grid-row-end: 3;
+}
+
+.randcold{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2; 
+    grid-row-end: 3;
+}
+
+.randwind{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3; 
+    grid-row-end: 5;
 }
