@@ -142,6 +142,10 @@ main {
   padding: 2vw;
 }
 
+#arda {
+  background-image: url(../../img/arda_header.jpg);
+}
+
 #surspoken {
   background-image: url(../../img/surspoken.jpg);
   color: #ca7676;
@@ -222,4 +226,9 @@ main {
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 5;
+}
+
+.ardaicon {
+  height: 100px;
+  width: 100px;
 }
