@@ -18,10 +18,12 @@ $secondcolor: #ca7676;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-x: hidden; 
     color: $maindark;
+    font-size: 17px;
 }
 
 h1{
     font-size: 30px;
+    padding-bottom: 20px;
 }
  
 // general reset 
@@ -91,8 +93,8 @@ main{
 }
 
 @mixin menuBlock {
-    width: 11em;
-    height: 11em;
+    width: 10em;
+    height: 10em;
     margin: 1em 1em 1em 0;
     display: flex;
     background-size: contain;
@@ -105,7 +107,7 @@ main{
 }
 
 #menu{
-    height: 12.5em;
+    height: 11.5em;
     width: 100%;
     bottom: 0;
     background-color: $mainbright;
@@ -292,6 +294,5 @@ main{
 //arda
 
 .ardaicon{
-    height: 100px;
-    width: 100px;
+    @include menuBlock;
 }
