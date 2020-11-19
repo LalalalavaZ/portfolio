@@ -14,6 +14,7 @@ body {
   color: #353535;
   font-size: 17px;
   height: 100vh;
+  background-color: #FaFaFa;
 }
 
 a {
@@ -58,7 +59,7 @@ main {
 }
 
 #portfolio_header {
-  height: 29.5em;
+  height: 35em;
   width: auto;
   background-color: #FaFaFa;
 }
@@ -149,8 +150,8 @@ main {
 }
 
 #surspoken {
-  background-image: url(../../img/surspoken.jpg);
-  color: #ca7676;
+  background-image: url(../../img/surspoken0.jpg);
+  color: #e3e3e3;
 }
 
 #plshld {
@@ -184,7 +185,7 @@ main {
 }
 
 #abtmer {
-  width: 26em;
+  width: 22em;
   height: auto;
   float: right;
 }

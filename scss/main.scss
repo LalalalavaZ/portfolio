@@ -35,6 +35,7 @@ h1{
 body{
     @include font-default();
     height: 100vh;
+    background-color: $mainbright;
 }
 
 a{
@@ -76,7 +77,6 @@ main{
 
 .hidden{
     display: none;
-
 }
 
 
@@ -87,7 +87,7 @@ main{
 //portfolio page specific
 
 #portfolio_header{
-    height: 29.5em;
+    height: 35em;
     width: auto;
     background-color: $mainbright;
 }
@@ -187,8 +187,8 @@ main{
 }
 
 #surspoken{
-    background-image: url(../../img/surspoken.jpg);
-    color: $secondcolor;
+    background-image: url(../../img/surspoken0.jpg);
+    color: $maingrey;
     //speech bubble cursor follow
 }
 
@@ -230,7 +230,7 @@ main{
 }
 
 #abtmer{ 
-    width: 26em;
+    width: 22em;
     height: auto;
     float: right;
 }

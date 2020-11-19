@@ -20,11 +20,17 @@ var menuSec = document.querySelector('.menusec');
 // console.log(menuSec.classList.contains("menusec"))
 // menuSec[0].classList.remove('hidden');
 
-var portfolioSec = document.querySelector("#portfolio");
-var randSec = document.querySelector("#randart");
-var abtmeSec = document.querySelector("#abtme");
+var portfolioSec = document.getElementById("#portfolio");
+var randSec = document.getElementById("#randart");
+var abtmeSec = document.getElementById("#abtme");
 // portfolioSec.classList.add('hidden');
+var  prtfMenu = document.getElementById("menu-prtf");
+var randMenu = document.getElementById("menu-rand");
+var abtmeNenu = document.getElementById("menu-abtme");
 
+prtfMenu.onclick = function(){
+    portfolioSec.style.display = "block";
+}
 
 
 //cursor prtfsec
