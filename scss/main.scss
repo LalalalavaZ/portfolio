@@ -59,10 +59,11 @@ img{
 main{
     padding: 6.25em 15%;
     background-color: $maingrey;
+    margin-bottom: 3em;
 }
 
 .mainsec{
-    margin-bottom: 6.25em;
+    margin-bottom: 3em;
 }
 
 .backtomain{
@@ -206,12 +207,18 @@ main{
 //about me
 #abtme{
     height: 31em;
+    @media screen and (max-width: $grid-mobile-breakpoint){
+        height: 50em;
+    }
 }
 
 #abtmel{
     float: left;
-    width: 26em;
+    width: 30vw;
     height: auto;
+    @media screen and (max-width: $grid-mobile-breakpoint){
+        width: inherit;
+    }
 }
 
 #resume{
@@ -230,11 +237,13 @@ main{
 }
 
 #abtmer{ 
-    width: 22em;
+    width: 30vw;
     height: auto;
     float: right;
     @media screen and (max-width: $grid-mobile-breakpoint){
         float: left; 
+        width: inherit;
+        margin-top: 15px;
     }
 }
 

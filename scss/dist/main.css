@@ -169,8 +169,13 @@ main {
 
 #abtmel {
   float: left;
-  width: 26em;
+  width: 30vw;
   height: auto;
+}
+@media screen and (max-width: 650px) {
+  #abtmel {
+    width: inherit;
+  }
 }
 
 #resume {
@@ -185,13 +190,18 @@ main {
 }
 
 #abtmer {
-  width: 22em;
+  width: 30vw;
   height: auto;
   float: right;
 }
 @media screen and (max-width: 650px) {
+  #abtme {
+    height: 45em;
+  }
   #abtmer {
     float: left;
+    width: inherit;
+    margin-top: 15px;
   }
 }
 
