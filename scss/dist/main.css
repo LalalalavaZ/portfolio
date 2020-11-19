@@ -78,7 +78,7 @@ main {
 
 #menu {
   height: 11.5em;
-  width: 100%;
+  width: 100vw;
   bottom: 0;
   background-color: #FaFaFa;
   padding: 0 1em 0 0;
@@ -101,8 +101,8 @@ main {
 }
 @media screen and (max-width: 650px) {
   #menu .menusec {
-    width: 7em;
-    height: 7em;
+    width: 6em;
+    height: 6em;
     align-items: center;
   }
 }
@@ -188,6 +188,11 @@ main {
   width: 22em;
   height: auto;
   float: right;
+}
+@media screen and (max-width: 650px) {
+  #abtmer {
+    float: left;
+  }
 }
 
 @media screen and (max-width: 650px) {

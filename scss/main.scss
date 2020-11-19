@@ -108,7 +108,7 @@ main{
 
 #menu{
     height: 11.5em;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
     background-color: $mainbright;
     padding: 0 1em 0 0;
@@ -124,8 +124,8 @@ main{
         transition: 0.1s;
 
         @media screen and (max-width: $grid-mobile-breakpoint){
-            width: 7em;
-            height: 7em;
+            width: 6em;
+            height: 6em;
             align-items: center;
         }        
     }
@@ -233,6 +233,9 @@ main{
     width: 22em;
     height: auto;
     float: right;
+    @media screen and (max-width: $grid-mobile-breakpoint){
+        float: left; 
+    }
 }
 
 #contactinfo{
