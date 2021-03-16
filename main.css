@@ -1,0 +1,8 @@
+.project img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects{
+    width: 50%;
+}
