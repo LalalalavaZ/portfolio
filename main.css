@@ -1,8 +1,32 @@
+.page_head{
+    font-size: 60px;
+    color: #acacac;
+    transform: translate(-120px, -10px);
+    writing-mode: vertical-rl;
+    position: fixed;
+    z-index: -1;
+}
+
+.back-menu{
+    position: fixed; 
+    right: 0; 
+    bottom: 0; 
+    z-index: 99;
+    fill: #353535;
+}
+
 .project img{
     width: 100%;
-    object-fit: cover;
+    max-height: 400px;
+    object-fit: contain;
 }
 
 .projects{
     width: 50%;
+}
+
+.head_pic{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
