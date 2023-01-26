@@ -1,5 +1,7 @@
 :root {
     --main-green: #89CE00;
+    --main-yellow: #fcd632;
+    --main-pink: #e7a6a6;
   }
 
 body {
@@ -19,10 +21,6 @@ main{
     background-color: var(--main-green);
 }
 
-header{
-    position: static;
-}
-
 aside{
     display: flex;
     position: fixed;
@@ -40,19 +38,30 @@ a{
     color: inherit;
 }
 
-a:hover{
+h1, a:hover{
     color: #fff; 
     background-color: #000;
 }
 
-h2, p{
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2, h3{
     font-size: 2rem;
     font-weight: 400;
     line-height: 2rem;
 }
 
+p, ol{
+    font-family: 'Fira Sans';
+    font-size: 1rem;
+}
+
 textarea {
     outline: none;
+    word-wrap:inherit;
 }
 
 footer{
@@ -61,7 +70,7 @@ footer{
     height:auto;
     margin-top: auto;
     bottom: 2rem;
-    margin-left: 2rem;
+    margin-left: 35vw;
 }
 
 footer a:hover{
@@ -90,4 +99,41 @@ footer a:hover{
     bottom: 2rem; 
     z-index: 99;
     fill: #353535;
+}
+
+/* pad */
+@media only screen and (max-width: 800px) {
+    aside{
+        display: block;
+        position: static;
+        margin-top: 0;
+        min-height: 70vh;
+        width: 100vw;
+        background-color: #fff;
+    }
+    footer{
+        position: absolute;
+        width: auto;
+        padding: 2rem;
+        margin-left: 0;
+        bottom: 30vh;
+        font-size: 0.75rem;
+    }
+    .movediv{
+        display: none !important;
+    }
+    main{
+        position: relative;
+        width: fit-content;
+        /* top: 70vh; */
+    }
+  }
+
+
+#cwcs_main, #plshld_main{
+    background-color: var(--main-yellow);
+}
+
+#atrium_main{
+    background-color: var(--main-pink);
 }

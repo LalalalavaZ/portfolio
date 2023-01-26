@@ -43,6 +43,7 @@ function dragElement(elmnt) {
 }
 
 
+
 /////////aside display image///////////
 function enterImage(coverimg){
   document.body.classList.add('hovering')
