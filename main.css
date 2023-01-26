@@ -127,6 +127,9 @@ footer a:hover{
         width: fit-content;
         /* top: 70vh; */
     }
+    .inline_img{
+        width: 80vw;
+    }
   }
 
 
